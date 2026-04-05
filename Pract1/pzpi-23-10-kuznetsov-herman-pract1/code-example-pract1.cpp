@@ -55,6 +55,7 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "Ukrainian");
     std::vector<std::unique_ptr<Shape>> shapes;
     shapes.push_back(std::make_unique<Circle>(5.0));
     shapes.push_back(std::make_unique<Rectangle>(4.0, 6.0));
@@ -129,6 +130,7 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "Ukrainian");
     std::vector<BankAccount*> bank;
     bank.push_back(new SavingsAccount(1000));
     bank.push_back(new CheckingAccount(500));
@@ -224,6 +226,7 @@ public:
 };
 
 int main() {
+    setlocale(LC_ALL, "Ukrainian");
     std::vector<std::unique_ptr<DocumentNode>> document;
     document.push_back(std::make_unique<TextElement>("Заголовок звіту"));
     document.push_back(std::make_unique<ImageElement>("logo.png"));
